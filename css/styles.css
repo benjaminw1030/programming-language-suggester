@@ -14,3 +14,13 @@
 .invisible {
   visibility: hidden;
 }
+
+#cplusplus,
+#csharp,
+#ruby,
+#python,
+#java,
+#objectivec,
+#javascript {
+  display: none;
+}

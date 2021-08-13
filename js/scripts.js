@@ -3,10 +3,10 @@ $(document).ready(function () {
     event.preventDefault();
     const name = $("#name").val();
     const q1 = $("input:radio[name=reason]:checked").val();
-    const q2 = $("input:radio[name=reason]:checked").val();
-    const q3 = $("input:radio[name=reason]:checked").val();
-    const q4 = $("input:radio[name=reason]:checked").val();
-    const q5 = $("input:radio[name=reason]:checked").val();
+    const q2 = $("input:radio[name=platform]:checked").val();
+    const q3 = $("input:radio[name=experience]:checked").val();
+    const q4 = $("input:radio[name=os]:checked").val();
+    const q5 = $("input:radio[name=work]:checked").val();
     let cplusplus = 0;
     let csharp = 0
     let ruby = 0;
@@ -41,7 +41,7 @@ $(document).ready(function () {
     } else if (q1 === "money") {
       python += 1;
       javascript += 1;
-      objectivec += 1
+      objectivec += 1;
       csharp += 1;
       java += 1;
     } else if (q1 === "dunno") {
@@ -108,9 +108,30 @@ $(document).ready(function () {
       python += 2;
     }
 
-// Comparing values
+    console.log(cplusplus);
+    console.log(csharp);
+    console.log(ruby);
+    console.log(python);
+    console.log(java);
+    console.log(objectivec);
+    console.log(javascript);
+    console.log(q1);
+    console.log(q2);
+    console.log(q3);
+    console.log(q4);
+    console.log(q5);
 
-    if (cplusplus 
+// Comparing values and showing results
+
+    if (cplusplus > csharp && cplusplus > ruby && cplusplus > python && cplusplus > java && cplusplus > objectivec && cplusplus > javascript) {
+      $("#cplusplus").show();
+      $("#csharp").hide();
+      $("#ruby").hide();
+      $("#python").hide();
+      $("#java").hide();
+      $("#objectivec").hide();
+      $("#javascript").hide();
+    } 
 
   });
 });
