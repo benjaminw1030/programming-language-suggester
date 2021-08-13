@@ -108,19 +108,6 @@ $(document).ready(function () {
       python += 2;
     }
 
-    console.log(cplusplus);
-    console.log(csharp);
-    console.log(ruby);
-    console.log(python);
-    console.log(java);
-    console.log(objectivec);
-    console.log(javascript);
-    console.log(q1);
-    console.log(q2);
-    console.log(q3);
-    console.log(q4);
-    console.log(q5);
-
 // Comparing values and showing results
 
     if (cplusplus > csharp && cplusplus > ruby && cplusplus > python && cplusplus > java && cplusplus > objectivec && cplusplus > javascript) {
@@ -131,8 +118,55 @@ $(document).ready(function () {
       $("#java").hide();
       $("#objectivec").hide();
       $("#javascript").hide();
-    } 
-
+    } else if (csharp >= cplusplus && csharp >= ruby && csharp > python && csharp > java && csharp >= objectivec && csharp > javascript) {
+      $("#cplusplus").hide();
+      $("#csharp").show();
+      $("#ruby").hide();
+      $("#python").hide();
+      $("#java").hide();
+      $("#objectivec").hide();
+      $("#javascript").hide();
+    } else if (ruby > csharp && ruby >= cplusplus && ruby > python && ruby > java && ruby >= objectivec && ruby > javascript) {
+      $("#cplusplus").hide();
+      $("#csharp").hide();
+      $("#ruby").show();
+      $("#python").hide();
+      $("#java").hide();
+      $("#objectivec").hide();
+      $("#javascript").hide();
+    } else if (python >= csharp && python >= ruby && python >= cplusplus && python >= java && python >= objectivec && python >= javascript) {
+      $("#cplusplus").hide();
+      $("#csharp").hide();
+      $("#ruby").hide();
+      $("#python").show();
+      $("#java").hide();
+      $("#objectivec").hide();
+      $("#javascript").hide();
+    } else if (java >= csharp && java >= ruby && java > python && java >= cplusplus && java >= objectivec && java > javascript) {
+      $("#cplusplus").hide();
+      $("#csharp").hide();
+      $("#ruby").hide();
+      $("#python").hide();
+      $("#java").show();
+      $("#objectivec").hide();
+      $("#javascript").hide();
+    } else if (objectivec > csharp && objectivec > ruby && objectivec > python && objectivec > java && objectivec >= cplusplus && objectivec > javascript) {
+      $("#cplusplus").hide();
+      $("#csharp").hide();
+      $("#ruby").hide();
+      $("#python").hide();
+      $("#java").hide();
+      $("#objectivec").show();
+      $("#javascript").hide();
+    } else if (javascript >= csharp && javascript >= ruby && javascript > python && javascript >= java && javascript >= objectivec && javascript >= cplusplus) {
+      $("#cplusplus").hide();
+      $("#csharp").hide();
+      $("#ruby").hide();
+      $("#python").hide();
+      $("#java").hide();
+      $("#objectivec").hide();
+      $("#javascript").show();
+    }
   });
 });
 
