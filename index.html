@@ -12,8 +12,8 @@
 <body>
   <div class="container">
     <div class="jumbotron">
-    <h1>Programming Language Suggester</h1>
-    <h6>Answer the Questions below to determine what programming language you should start learning.</h6>
+      <h1>Programming Language Suggester</h1>
+      <h6>Answer the Questions below to determine what programming language you should start learning.</h6>
     </div>
     <div>
       <form id="suggester">
@@ -156,12 +156,14 @@
     </div>
 
     <div id="result">
-      <h6>Thanks, <span id="inputName"></span>! Based on your answers, you would benefit by learning:</h6>
+      <p id="resultIntro">Thanks, <span id="inputName"></span>! Based on your answers, you would benefit by learning:</h5>
       <div id="cplusplus">
         <div class="card">
           <div class="card-body">
             <h2 class="card-title">C++</h2>
-            <img src="img/cplusplus.png" alt="C++">
+            <div class="icon">
+              <img src="img/cplusplus.png" alt="C++">
+            </div>
             <p class="card-text">A successor to C, the idea behind C++’s development was to add higher-level paradigms
               to C but also keeping
               the low-level qualities present in it. Since its inception, C++ has evolved quite a lot to include
@@ -180,7 +182,9 @@
         <div class="card">
           <div class="card-body">
             <h2 class="card-title">C#</h2>
-            <img src="img/csharp.png" alt="C#">
+            <div class="icon">
+              <img src="img/csharp.png" alt="C#">
+            </div>
             <p class="card-text">Just Like C++, C# is another programming language built on top of C where the major
               addition was
               object-oriented capabilities. C# is closely related to Microsoft’s .NET framework since it was initially
@@ -199,7 +203,9 @@
         <div class="card">
           <div class="card-body">
             <h2 class="card-title">Ruby</h2>
-            <img src="img/ruby.png" alt="Ruby">
+            <div class="icon">
+              <img src="img/ruby.png" alt="Ruby">
+            </div>
             <p class="card-text">According to its own official website, “Ruby is a language of careful balance”. They
               can certainly claim that
               since the language combines parts of Perl, Smalltalk, Eiffel, Ada, and Lisp to come up with a balanced mix
@@ -217,7 +223,9 @@
       <div id="python">
         <div class="card">
           <div class="card-body">
-            <img src="img/python.png" alt="Python">
+            <div class="icon">
+              <img src="img/python.png" alt="Python">
+            </div>
             <h2 class="card-title">Python</h2>
             <p class="card-text">A lot of beginners that have gone online to ask which programming language should they
               learn first hear
@@ -239,7 +247,9 @@
         <div class="card">
           <div class="card-body">
             <h2 class="card-title">Java</h2>
-            <img src="img/java.png" alt="Java">
+            <div class="icon">
+              <img src="img/java.png" alt="Java">
+            </div>
             <p class="card-text">Java often appears at the top of programming languages rankings thanks to its huge
               popularity, rooted mainly
               in one thing: its “write once, run anywhere” (WORA) principle: any compiled Java code can run on any
@@ -259,7 +269,9 @@
         <div class="card">
           <div class="card-body">
             <h2 class="card-title">Objective-C</h2>
-            <img src="img/objective-c.png" class="card-img" alt="Objective-C">
+            <div class="icon">
+              <img src="img/objective-c.png" alt="Objective-C">
+            </div>
             <p class="card-text">Yet another high-level programming language based on C, Objective-C took it a little
               further by adding
               features and syntax from Smalltalk. Thus, we can say it’s a superset of C since any C code can run
@@ -276,7 +288,9 @@
         <div class="card">
           <div class="card-body">
             <h2 class="card-title">JavaScript</h2>
-            <img src="img/javascript.png" alt="Javascript">
+            <div class="icon">
+              <img src="img/javascript.png" alt="Javascript">
+            </div>
             <p class="card-text">JavaScript has been a fundamental part of our everyday lives for quite some time now,
               simply because it’s one
               of the essential pillars of most websites (along with HTML and CSS). Through JavaScript, web pages can

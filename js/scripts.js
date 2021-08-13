@@ -20,13 +20,11 @@ $(document).ready(function () {
     if (!name) {
       $("#nameAlert").addClass("visible");
       $("#nameAlert").removeClass("invisible");
-      $("#result").addClass("invisible");
-      $("#result").removeClass("visible");
+      $("#result").fadeOut();
 
     } else {
       $("#inputName").text(name);
-      $("#result").addClass("visible");
-      $("#result").removeClass("invisible");
+      $("#result").fadeIn();
       $("#nameAlert").addClass("invisible");
       $("#nameAlert").addClass("visible");
     };
@@ -43,7 +41,7 @@ $(document).ready(function () {
       javascript += 1;
       objectivec += 1;
       csharp += 1;
-      java += 1;
+      java += 2;
     } else if (q1 === "dunno") {
       python += 1;
     }

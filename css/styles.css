@@ -13,8 +13,7 @@ body {
   color: #C5C6C7
 }
 
-#nameAlert,
-#result {
+#nameAlert {
   visibility: hidden;
 }
 
@@ -30,6 +29,7 @@ body {
   visibility: hidden;
 }
 
+#result,
 #cplusplus,
 #csharp,
 #ruby,
@@ -40,10 +40,15 @@ body {
   display: none;
 }
 
-#result img {
-  width:150px;
-  float:left;
-  margin: 20px;
+#resultIntro {
+  font-weight: bolder;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  float: left;
+  height: 100%;
 }
 
 .btn-dark {
@@ -55,6 +60,7 @@ body {
   margin-bottom: 20px;
   background-color: #1F2833;
   float: left;
+  height: auto;
 }
 
 .card-title {
