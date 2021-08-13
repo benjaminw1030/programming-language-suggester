@@ -45,14 +45,15 @@ body {
 }
 
 .icon {
-  display: flex;
-  align-items: center;
   float: left;
-  height: 100%;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 .btn-dark {
   margin-bottom: 20px;
+  color: #C5C6C7;
+  background-color: #1F2833;
 }
 
 .card {
