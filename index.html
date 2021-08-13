@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Programming Language Suggester</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Answer the Questions below to determine what programming language you should start learning.</h1>
+    <div>
+      <form id="suggester">
+        <label for="name">Enter your name:</label>
+        <input id="name" class="form-control" type="text">
+        <p id=nameAlert>Please enter your name.</p>
+
+        <label for="Question-1" class="question">Why do you want to learn coding?</label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="reason" value="fun" checked>
+            For fun!
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="reason" value="improve">
+            To improve myself.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="reason" value="money">
+            To make money.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="reason" value="dunno">
+            I don't know.
+          </label>
+        </div>
+
+        <label for="Question-2" class="question">What platform or field would you like to work in?</label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="platform" value="bigTech" checked>
+            Big tech companies.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="platform" value="web">
+            The internet.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="platform" value="mobile">
+            Mobile phones.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="platform" value="gaming">
+            Gaming.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="platform" value="dunno">
+            I don't care.
+          </label>
+        </div>
+
+        <label for="Question-3" class="question">Do you have any coding experience?</label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="experience" value="none" checked>
+            Nope.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="experience" value="little">
+            Maybe a little.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="experience" value="pro">
+            I'm a pro looking for my next challenge!
+          </label>
+        </div>
+
+        <label for="Question-4" class="question">Which OS do you prefer, Apple or Microsoft?</label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="os" value="apple" checked>
+            Apple!
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="os" value="microsoft">
+            Microsoft!
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="os" value="linux">
+            Linux!
+          </label>
+        </div>
+
+        <label for="Question-5" class="question">Would you like to try something newer?</label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="new" value="yes" checked>
+            Heck yes!
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="new" value="no">
+            No, I'd like to work with something established.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="new" value="meh">
+            Eh, whatevs.
+          </label>
+        </div>
+
+        <button type="submit" class="btn-success">Where should I start?</button>
+      </form>
+    </div>
+
+    <p id="result">Thanks <span id="inputName"></span>! Based on your answers, you would benefit by learning:</p>
+
+    </div>
+  </div>
+</body>
+
+</html>
