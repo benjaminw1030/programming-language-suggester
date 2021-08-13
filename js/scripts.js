@@ -10,8 +10,16 @@ $(document).ready(function() {
 
     if (!name) {
       $("#nameAlert").addClass("visible");
-      $("#nameAlert").fadeIn();
-      
-    }
-  });
+      $("#nameAlert").removeClass("invisible");
+      $("#result").addClass("invisible");
+      $("#result").removeClass("visible");
+
+    } else {
+      $("#inputName").text(name);
+      $("#result").addClass("visible");
+      $("#result").removeClass("invisible");
+      $("#nameAlert").addClass("invisible");
+      $("#nameAlert").addClass("visible");
+    };
+  });  
 });
