@@ -22,6 +22,8 @@ This quiz will determine which programming language the user will most likely wa
 2. Open the new directory.
 3. Open index.html in a browser.
 
+It is also possible to simply visit the site on [GitHub Pages](https://benjaminw1030.github.io/programming-language-suggester/).
+
 ## Known Bugs
 
 * No bugs known at the moment.
