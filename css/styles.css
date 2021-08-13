@@ -1,0 +1,13 @@
+#nameAlert,
+#result {
+  visibility: hidden;
+}
+
+#nameAlert{
+  color: crimson;
+}
+
+.visible {
+  display: none;
+  visibility: visible;
+}
