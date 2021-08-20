@@ -75,3 +75,14 @@ a:link {
 a:visited {
   color: #45A29E;
 }
+
+#portfolio {
+  width: 100%;
+  position: relative;
+  bottom: 0;
+  text-align: center;
+}
+
+#content {
+ min-height: 95vh;
+}

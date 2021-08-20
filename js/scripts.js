@@ -97,12 +97,12 @@ $(document).ready(function () {
     if (q5 === "startup") {
       javascript += 1;
       ruby += 1;
-    } else if (q4 === "corporation") {
+    } else if (q5 === "corporation") {
       cplusplus += 1;
       csharp += 1;
       java += 2;
       objectivec += 1;
-    } else if (q4 === "myself") {
+    } else if (q5 === "myself") {
       python += 2;
     }
 
